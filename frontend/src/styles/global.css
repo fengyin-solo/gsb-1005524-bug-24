@@ -26,6 +26,7 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .data-table { width: 100%; border-collapse: collapse; background: #fff; }
 .data-table th, .data-table td { border: 1px solid var(--border); padding: 8px 10px; font-size: 13px; text-align: left; }
 .empty-state { text-align: center; color: var(--muted); }
+.block-title { font-size: 14px; margin: 16px 0 8px; }
 .row-actions { display: flex; gap: 6px; }
 .btn { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
 .btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
@@ -33,3 +34,18 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.muted-text { color: var(--muted); }
+
+/* 弹窗表单与详情 */
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { background: #fff; border-radius: 10px; padding: 18px 20px; width: 560px; max-width: calc(100vw - 32px); max-height: 86vh; overflow: auto; box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2); }
+.modal-title { margin: 0 0 14px; font-size: 16px; }
+.form-item { display: block; margin-bottom: 10px; }
+.form-item span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-item input { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 7px 9px; font-size: 13px; }
+.required-mark { color: #b42318; font-style: normal; margin-left: 2px; }
+.modal-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 12px; font-size: 12px; }
+.modal-foot > div { display: flex; gap: 8px; }
+.detail-table { width: 100%; border-collapse: collapse; }
+.detail-table th, .detail-table td { border: 1px solid var(--border); padding: 7px 10px; font-size: 13px; text-align: left; }
+.detail-table th { width: 120px; background: #f8fafc; color: var(--muted); font-weight: normal; }

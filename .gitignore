@@ -85,3 +85,6 @@ desktop.ini
 *.db
 *.pid
 *.seed
+
+# ===== 光伏阵列运行期落库文件 =====
+backend/data/

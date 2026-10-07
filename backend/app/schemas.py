@@ -13,6 +13,8 @@ class PageResult(BaseModel, Generic[T]):
     total: int
     page: int = 1
     size: int = 20
+    # 光伏阵列等模块随列表返回的四档状态统计，供页面顶部概览使用
+    stats: dict[str, int] | None = None
 
 
 class ActionResult(BaseModel):
